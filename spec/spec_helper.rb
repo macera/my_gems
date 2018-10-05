@@ -1,5 +1,11 @@
 require "bundler/setup"
 require "my_gems"
+require "simplecov"
+SimpleCov.start do
+  add_filter "/spec/"
+end
+
+
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
